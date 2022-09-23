@@ -1,0 +1,129 @@
+<!--Homework Week 1:
+Implement a static HTML page, the first page of your blog
+Use your imagination to fill it with content that you like, but be smart and try to provide interesting info about you, 
+what you like to do, what are your hobbies and so on and maybe a picture with you so your colleagues can recognize you. 
+● Add to your blog, a “blog roll” like section and link all your colleagues blogs on that section. (hint: use ul element for that)
+ ● Use in your code as many tags of the following: html, head, body, footer, p, img, a, ul, span, title. 
+ ● Use in your code as many attributes of the following: title, href, src, width, height, alt, id
+Implement a contact form
+Use your imagination for creating the contact form, try using all the elements we have learned for a form.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AVATAR 3</title>
+    <link rel="shortcut icon" type="image/png" href="img/avatar3.png">
+    <style>
+        body {
+            background-color: rgb(87, 171, 250);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        p {
+            font-size: smaller;
+        }
+
+        div {
+            border: 1px solid rgb(54, 27, 164);
+            padding: 10px;
+            width: 550px;
+            height: 200px;
+            text-align: justify;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Casting for Avatar 3 (2024)</h2>
+    <div>
+        Avatar 3 is an upcoming American epic science fiction film directed, со-produced, co-written, and
+        co-edited by
+        <span style="color:red">James Cameron</span>. It is the third film in Cameron's Avatar franchise, and a
+        sequel
+        to Avatar: The Way of Water (2022). Cameron is producing the film with Jon Landau, with Rick Jaffa and
+        Amanda
+        Silver originally announced as his co-writers; it was later announced that Cameron, Jaffa, Silver, Josh
+        Friedman, and Shane Salerno took a part in the writing process of all of the sequels before being
+        assigned to
+        finish the separate scripts, making the eventual writing credits unclear. Cast members Sam Worthington,
+        Zoe
+        Saldana, Stephen Lang, Sigourney Weaver, Joel David Moore, CCH Pounder, Dileep Rao, Giovanni Ribisi,
+        Matt
+        Gerald, Cliff Curtis, Edie Falco, Brendan Cowell, Michelle Yeoh reprise their roles from previous films,
+        with
+        David Thewlis portraying a new character.
+    </div>
+
+    <p style="border-left: 6px  darkblue">Here are some of the actors you will be working with!</p>
+
+    <ul type="disc">
+        <li><a href="https://www.imdb.com/name/nm0757855/?ref_=tt_cl_i_3" target="_blank">Zoe Saldana</a></li>
+        <li><a href="https://www.imdb.com/name/nm0000706/?ref_=tt_cl_i_2" target="_blank">Michelle Yeoh</a></li>
+        <li><a href="https://www.imdb.com/name/nm0000667/?ref_=tt_cl_i_1" target="_blank">David Thewlis</a></li>
+        <li><a href="https://www.imdb.com/name/nm0000244/?ref_=tt_cl_i_4" target="_blank">Sigourney Weaver</a>
+        </li>
+        <li><a href="https://www.imdb.com/name/nm0000610/?ref_=tt_cl_i_8" target="_blank">Giovanni Ribisi</a>
+        </li>
+    </ul>
+
+    <img src="avatar3.jpg" alt="Avatar 3 Poster" width="350" />
+
+    <p>Age requirement: 20-70</p><br>
+
+
+
+    <fieldset style="background-color:lightblue">
+        <legend>Personal details</legend>
+
+        <form>
+            <label for="gender">Select:</label><br>
+            <select name="gender">
+                <option value="1">Mr</option>
+                <option value="2">Mrs</option>
+                <option value="3">Ms</option>
+            </select><br>
+
+            <label for="firstname">Enter your first name:</label><br>
+            <input type="text" id="myfirstname" name="firstname"><br>
+
+            <label for="lastname">Enter your last name:</label><br>
+            <input type="text" id="mylastname" name="lastname"><br>
+
+            <label for="number">Enter your phone number:</label><br>
+            <input type="number" id="myphone" name="phone"><br>
+
+            <label for="age">Age interval:</label>
+            <input name="age" type="radio" id="ageinterval1" value="youngadult">
+            <label for="ageinterval1">20-35</label>
+            <input name="age" type="radio" id="ageinterval2" value="middleage">
+            <label for="ageinterval2">35-50</label>
+            <input name="age" type="radio" id="ageinterval3" value="seniors">
+            <label for="ageinterval3">50-70</label><br>
+
+            <label for="filename">Submit your acting portofolio:</label><br>
+            <input type="file" id="myfile" name="file">
+
+            <p>
+                <input type="submit" name="submit" value="Send Form" />
+                <input type="reset" value="Clear Form" />
+            </p>
+
+    </fieldset>
+    </form>
+
+    <footer>
+
+        <p>For any questions, please send an e-mail to the casting director:<a href="mailto:iris.tarnita@gmail.com">
+                Iris Jasmine </a></p>
+    </footer>
+
+</body>
+
+</html>
